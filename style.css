@@ -112,3 +112,22 @@ img {
   height: 100%;
   width: 100%;
 }
+
+.min-function {
+  background-color: #f0f0f0;
+  height: 200px;
+}
+
+.min-function__content {
+  background-color: #55c500;
+  height: 100%;
+}
+
+.min-function__content.-before {
+  max-width: 400px;
+  width: 100%;
+}
+
+.min-function__content.-after {
+  width: min(100%, 400px);
+}
