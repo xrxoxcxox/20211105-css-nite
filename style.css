@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   display: grid;
   column-gap: 16px;
@@ -15,4 +20,36 @@
 
 .title {
   grid-column: 1 / 3;
+}
+
+.heading {
+  grid-column: 1 / 3;
+  margin-top: 24px;
+}
+
+.before {
+  grid-column: 1 / 2;
+  margin-top: 16px;
+}
+
+.after {
+  grid-column: 2 / 3;
+  margin-top: 16px;
+}
+
+.aspect-ratio.-before {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.aspect-ratio__content.-before {
+  inset: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.aspect-ratio.-after {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
