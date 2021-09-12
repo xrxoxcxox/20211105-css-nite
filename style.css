@@ -80,3 +80,35 @@ img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
+
+.logical-properties {
+  background-color: #f0f0f0;
+  height: 200px;
+  width: 100%;
+}
+
+.logical-properties.-block {
+  margin-top: 16px;
+}
+
+.logical-properties.-inline.-before {
+  padding: 0 32px; /* または padding-left: 32px; padding-right: 32px; と個別指定 */
+}
+
+.logical-properties.-inline.-after {
+  padding-inline: 32px;
+}
+
+.logical-properties.-block.-before {
+  padding: 32px 0; /* または padding-top: 32px; padding-bottom: 32px; と個別指定 */
+}
+
+.logical-properties.-block.-after {
+  padding-block: 32px;
+}
+
+.logical-properties__content {
+  background-color: #55c500;
+  height: 100%;
+  width: 100%;
+}
