@@ -14,7 +14,7 @@ img {
   column-gap: 16px;
   grid-template-columns: minmax(auto, 480px) minmax(auto, 480px);
   justify-content: center;
-  padding-block: 32px;
+  padding-block: 40px;
   width: 100%;
 }
 
@@ -35,6 +35,33 @@ img {
 .after {
   grid-column: 2 / 3;
   margin-top: 16px;
+}
+
+.position-absolute-center {
+  background-color: #f0f0f0;
+  height: 200px;
+  position: relative;
+}
+
+.position-absolute-center__content {
+  background-color: #55c500;
+  height: 50%;
+  width: 50%;
+}
+
+.position-absolute-center__content.-before {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.position-absolute-center__content.-after {
+  margin: auto;
+  position: absolute;
+  inset: 0;
 }
 
 .aspect-ratio.-before {
