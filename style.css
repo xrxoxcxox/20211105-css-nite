@@ -1,3 +1,7 @@
+:root {
+  --green: #55c500;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -27,6 +31,10 @@ img {
   margin-top: 24px;
 }
 
+.before, .after {
+  background-color: #f0f0f0;
+}
+
 .before {
   grid-column: 1 / 2;
   margin-top: 16px;
@@ -38,7 +46,6 @@ img {
 }
 
 .flex-gap {
-  background-color: #f0f0f0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -53,7 +60,7 @@ img {
 }
 
 .flex-gap__content {
-  background-color: #55c500;
+  background-color: var(--green);
   height: 50px;
   width: min(100px, 100%);
 }
@@ -64,7 +71,6 @@ img {
 }
 
 .css-grid {
-  background-color: #f0f0f0;
   padding: 16px;
 }
 
@@ -81,7 +87,7 @@ img {
 }
 
 .css-grid__content {
-  background-color: #55c500;
+  background-color: var(--green);
   height: 50px;
 }
 
@@ -90,13 +96,12 @@ img {
 }
 
 .position-absolute-center {
-  background-color: #f0f0f0;
   height: 200px;
   position: relative;
 }
 
 .position-absolute-center__content {
-  background-color: #55c500;
+  background-color: var(--green);
   height: 50%;
   width: 50%;
 }
@@ -116,7 +121,11 @@ img {
   inset: 0;
 }
 
-.aspect-ratio.-before {
+.aspect-ratio {
+  padding: 16px;
+}
+
+.aspect-ratio__content-wrapper.-before {
   overflow: hidden;
   padding-top: 56.25%;
   position: relative;
@@ -128,13 +137,12 @@ img {
   position: absolute;
 }
 
-.aspect-ratio.-after {
+.aspect-ratio__content.-after {
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
 .logical-properties {
-  background-color: #f0f0f0;
   height: 200px;
   width: 100%;
 }
@@ -160,18 +168,17 @@ img {
 }
 
 .logical-properties__content {
-  background-color: #55c500;
+  background-color: var(--green);
   height: 100%;
   width: 100%;
 }
 
 .min-function {
-  background-color: #f0f0f0;
   height: 200px;
 }
 
 .min-function__content {
-  background-color: #55c500;
+  background-color: var(--green);
   height: 100%;
 }
 
@@ -185,7 +192,6 @@ img {
 }
 
 .where {
-  background-color: #f0f0f0;
   padding: 16px;
 }
 
@@ -206,16 +212,14 @@ img {
 }
 
 .accent-color {
-  background-color: #f0f0f0;
   padding: 16px;
 }
 
 .accent-color.-after {
-  accent-color: #55c500;
+  accent-color: var(--green);
 }
 
 .svg-non-scaling-stroke {
-  background-color: #f0f0f0;
   padding: 16px;
 }
 
