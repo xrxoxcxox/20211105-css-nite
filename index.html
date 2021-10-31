@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
   <title>2011/11/05 CSS Nite</title>
 </head>
 <body>
   <main class="container">
-    <h1 class="title">そのCSS、新しい書き方がありますよ</h1>
-    <h2 class="heading">flex gap</h2>
+    <h1>そのCSS、新しい書き方がありますよ</h1>
+    <h2>余白を持ったFlex Container内の要素</h2>
     <section class="before">
-      <div class="flex-gap -before">
+      <h3>Before</h3>
+      <div class="area flex-gap -before">
         <div class="flex-gap__content -before"></div>
         <div class="flex-gap__content -before"></div>
         <div class="flex-gap__content -before"></div>
@@ -20,7 +24,8 @@
       </div>
     </section>
     <section class="after">
-      <div class="flex-gap -after">
+      <h3>After</h3>
+      <div class="area flex-gap -after">
         <div class="flex-gap__content -after"></div>
         <div class="flex-gap__content -after"></div>
         <div class="flex-gap__content -after"></div>
@@ -28,9 +33,10 @@
         <div class="flex-gap__content -after"></div>
       </div>
     </section>
-    <h2 class="heading">CSS Grid</h2>
+    <h2>親要素に合わせた柔軟な伸び縮み</h2>
     <section class="before">
-      <div class="css-grid -before">
+      <h3>Before</h3>
+      <div class="area css-grid -before">
         <div class="css-grid__content -before"></div>
         <div class="css-grid__content -before"></div>
         <div class="css-grid__content -before"></div>
@@ -39,7 +45,8 @@
       </div>
     </section>
     <section class="after">
-      <div class="css-grid -after">
+      <h3>After</h3>
+      <div class="area css-grid -after">
         <div class="css-grid__content -after"></div>
         <div class="css-grid__content -after"></div>
         <div class="css-grid__content -after"></div>
@@ -47,61 +54,70 @@
         <div class="css-grid__content -after"></div>
       </div>
     </section>
-    <h2 class="heading">position: absolute;の中で上下左右の中央揃え</h2>
+    <h2>position: absolute内で上下左右の中央揃え</h2>
     <section class="before">
-      <div class="position-absolute-center">
+      <h3>Before</h3>
+      <div class="area position-absolute-center -before">
         <div class="position-absolute-center__content -before"></div>
       </div>
     </section>
     <section class="after">
-      <div class="position-absolute-center">
+      <h3>After</h3>
+      <div class="area position-absolute-center -after">
         <div class="position-absolute-center__content -after"></div>
       </div>
     </section>
-    <h2 class="heading">画像のアスペクト比を維持する</h2>
+    <h2>画像のアスペクト比の維持</h2>
     <section class="before">
-      <div class="aspect-ratio -before">
+      <h3>Before</h3>
+      <div class="area aspect-ratio -before">
         <div class="aspect-ratio__content-wrapper -before">
           <img src="./images/checkerboard.png" alt="" class="aspect-ratio__content -before">
         </div>
       </div>
     </section>
     <section class="after">
-      <div class="aspect-ratio -after">
+      <h3>After</h3>
+      <div class="area aspect-ratio -after">
         <img src="./images/checkerboard.png" alt="" class="aspect-ratio__content -after">
       </div>
     </section>
-    <h2 class="heading">上下だけとか左右だけの余白</h2>
+    <h2>上下だけor左右だけの余白</h2>
     <section class="before">
-      <div class="logical-properties -inline -before">
+      <h3>Before</h3>
+      <div class="area logical-properties -inline -before">
         <div class="logical-properties__content"></div>
       </div>
-      <div class="logical-properties -block -before">
+      <div class="area logical-properties -block -before">
         <div class="logical-properties__content"></div>
       </div>
     </section>
     <section class="after">
-      <div class="logical-properties -inline -after">
+      <h3>After</h3>
+      <div class="area logical-properties -inline -after">
         <div class="logical-properties__content"></div>
       </div>
-      <div class="logical-properties -block -after">
+      <div class="area logical-properties -block -after">
         <div class="logical-properties__content"></div>
       </div>
     </section>
-    <h2 class="heading">基本的にはwidth: 100%;だけど上限を設けたい</h2>
+    <h2>基本的にはwidth: 100%だけど上限を設ける</h2>
     <section class="before">
-      <div class="min-function">
+      <h3>Before</h3>
+      <div class="area min-function -before">
         <div class="min-function__content -before"></div>
       </div>
     </section>
     <section class="after">
-      <div class="min-function">
+      <h3>After</h3>
+      <div class="area min-function -after">
         <div class="min-function__content -after"></div>
       </div>
     </section>
-    <h2 class="heading">詳細度の計算を楽にする</h2>
+    <h2>詳細度の制御</h2>
     <section class="before">
-      <div class="where -before">
+      <h3>Before</h3>
+      <div class="area where -before">
         <p>テキスト1</p>
         <p>テキスト2</p>
         <p class="where__content -before">テキスト3</p>
@@ -110,7 +126,8 @@
       </div>
     </section>
     <section class="after">
-      <div class="where -after">
+      <h3>After</h3>
+      <div class="area where -after">
         <p>テキスト1</p>
         <p>テキスト2</p>
         <p class="where__content -after">テキスト3</p>
@@ -118,9 +135,10 @@
         <p>テキスト5</p>
       </div>
     </section>
-    <h2 class="heading">フォームコントロールの印象を自分のサイトに合わせる</h2>
+    <h2>フォームコントロールの印象を自分のサイトに合わせる</h2>
     <section class="before">
-      <div class="accent-color -before">
+      <h3>Before</h3>
+      <div class="area accent-color -before">
         <input type="checkbox">
         <input type="checkbox" checked>
         <input type="radio">
@@ -130,7 +148,8 @@
       </div>
     </section>
     <section class="after">
-      <div class="accent-color -after">
+      <h3>After</h3>
+      <div class="area accent-color -after">
         <input type="checkbox">
         <input type="checkbox" checked>
         <input type="radio">
@@ -139,9 +158,10 @@
         <progress max="100" value="70"></progress>
       </div>
     </section>
-    <h2 class="heading">オマケ SVGの線幅を太くさせない</h2>
+    <h2>オマケ SVGの線幅を太くさせない</h2>
     <section class="before">
-      <div class="svg-non-scaling-stroke">
+      <h3>Before</h3>
+      <div class="area svg-non-scaling-stroke -before">
         <svg viewbox="0 0 100 100" width="100" height="100">
           <circle cx="50" cy="50" r="46" fill="#55c500" stroke="#000" stroke-width="8"></circle>
         </svg>
@@ -151,7 +171,8 @@
       </div>
     </section>
     <section class="after">
-      <div class="svg-non-scaling-stroke">
+      <h3>After</h3>
+      <div class="area svg-non-scaling-stroke -after">
         <svg viewbox="0 0 100 100" width="100" height="100">
           <circle cx="50" cy="50" r="46" fill="#55c500" stroke="#000" stroke-width="8" vector-effect="non-scaling-stroke"></circle>
         </svg>
