@@ -37,6 +37,32 @@ img {
   margin-top: 16px;
 }
 
+.css-grid {
+  background-color: #f0f0f0;
+  padding: 16px;
+}
+
+.css-grid.-before {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.css-grid.-after {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.css-grid__content {
+  background-color: #55c500;
+  height: 50px;
+}
+
+.css-grid__content.-before {
+  width: min(100px, 100%);
+}
+
 .position-absolute-center {
   background-color: #f0f0f0;
   height: 200px;
