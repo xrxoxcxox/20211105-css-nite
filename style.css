@@ -204,3 +204,13 @@ img {
 .where__content.-after {
   margin-top: 32px;
 }
+
+.svg-non-scaling-stroke {
+  background-color: #f0f0f0;
+  padding: 16px;
+}
+
+.svg-non-scaling-stroke svg + svg {
+  height: 100%;
+  width: 100%;
+}
