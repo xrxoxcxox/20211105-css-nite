@@ -183,3 +183,24 @@ img {
 .min-function__content.-after {
   width: min(100%, 400px);
 }
+
+.where {
+  background-color: #f0f0f0;
+  padding: 16px;
+}
+
+.where.-before p:not(:first-of-type) {
+  margin-top: 16px;
+}
+
+:where(.where.-after p:not(:first-of-type)) {
+  margin-top: 16px;
+}
+
+.where__content.-before {
+  margin-top: 32px !important;
+}
+
+.where__content.-after {
+  margin-top: 32px;
+}
