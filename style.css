@@ -37,6 +37,32 @@ img {
   margin-top: 16px;
 }
 
+.flex-gap {
+  background-color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-gap.-before {
+  padding: 16px 8px 8px 16px;
+}
+
+.flex-gap.-after {
+  gap: 8px;
+  padding: 16px;
+}
+
+.flex-gap__content {
+  background-color: #55c500;
+  height: 50px;
+  width: min(100px, 100%);
+}
+
+.flex-gap__content.-before {
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
 .css-grid {
   background-color: #f0f0f0;
   padding: 16px;
