@@ -205,6 +205,15 @@ img {
   margin-top: 32px;
 }
 
+.accent-color {
+  background-color: #f0f0f0;
+  padding: 16px;
+}
+
+.accent-color.-after {
+  accent-color: #55c500;
+}
+
 .svg-non-scaling-stroke {
   background-color: #f0f0f0;
   padding: 16px;
