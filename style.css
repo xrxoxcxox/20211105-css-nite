@@ -259,3 +259,21 @@ h3 {
   height: 100%;
   width: 100%;
 }
+
+.margin-auto {
+  height: 200px;
+}
+
+.margin-auto__content {
+  background-color: var(--green);
+  height: 100%;
+  width: 200px;
+}
+
+.margin-auto__content.-before {
+  margin: 0 auto;
+}
+
+.margin-auto__content.-after {
+  margin: auto;
+}
