@@ -203,22 +203,24 @@ h3 {
   width: 100%;
 }
 
-.min-function {
+.clamp-function {
   height: 200px;
 }
 
-.min-function__content {
+.clamp-function__content {
   background-color: var(--green);
+  margin: auto;
   height: 100%;
 }
 
-.min-function__content.-before {
-  max-width: 400px;
-  width: 100%;
+.clamp-function__content.-before {
+  max-width: 200px;
+  min-width: 150px;
+  width: 50%;
 }
 
-.min-function__content.-after {
-  width: min(100%, 400px);
+.clamp-function__content.-after {
+  width: clamp(150px, 50%, 200px);
 }
 
 .where {
